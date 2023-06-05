@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hangout Restaurant Website Menu Page</title>
+  <link rel="icon" type="image/x-icon" href="assets\logo4.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+  .nav-link {
+    color: gold;
+    margin-left: 70px;
+  }
+
+  .nav-link:hover {
+    color: antiquewhite;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+    text-decoration-thickness: 2px;
+  }
+
+  .navbar-nav {
+    margin-left: 200px;
+  }
+
+  /* (((((((((((((((tandoor special styles))))))))))))))) */
+
+  .text1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .heading3 {
+    text-align: center;
+  }
+  
+  .heading3:hover {
+    background-color: rgb(237, 166, 73);
+    font-style: italic;
+  }
+
+  .text2 {
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .prize {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .btn {
+    width: 50%;
+    text-align: center;
+    /* margin-top: 10px; */
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .btn {
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .btn:hover {
+    background-color: rgb(5, 163, 5);
+    border: 1px solid white;
+  }
+
+  .img {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  .img:hover {
+    box-shadow: 0 10px 20px 0 black;
+  }
+
+  .text3 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+
+  /* (((((((social media icons of footer))))))))) */
+  .fa {
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    padding: 5px;
+ }
+
+ .fa:hover {
+    opacity: 0.7;
+    color: goldenrod;
+    text-decoration: none;
+ }
+
+ .fa-twitter {
+  color: white;
+ }
+
+ .fa-facebook {
+  color: white;
+ }
+
+ .fa-instagram {
+  color: white;
+ }
+
+ .fa-youtube {
+  color: white;
+ }
+ .footerlist {
+  text-decoration: none;
+  color: white;
+ }
+
+ .footerlist:hover {
+  color: goldenrod;
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
+ }
+
+ /* ((((((((((((((((1 st media query)))))))))))))))) */
+ @media (min-width: 320px) and (max-width: 480px) {
+  .navbar-nav {
+    margin-left: 140px;
+  }
+ }
+
+ /* ((((((((((((((((2 nd media query)))))))))))))))) */
+ @media (min-width: 375px) and (max-width: 424px) {
+  .navbar-nav {
+    margin-left: 190px;
+  }
+ }
+
+ /* ((((((((((((((((3 rd media query)))))))))))))))) */
+ @media (min-width: 425px) and (max-width: 666px) {
+  .navbar-nav {
+    margin-left: 250px;
+  }
+ }
+
+ /* ((((((((((((((((4 th media query)))))))))))))))) */
+ @media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav {
+    margin-left: 600px;
+  }
+ }
+ 
+</style>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="fixed-top container-fluid" style="background-color: #292626;">
+      <a class="navbar-brand" href="#">
+        <img src="assets\logo4.jpg" style="height: 80px; margin-left: 50px; border-radius: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="color: goldenrod;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallary.html">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart(0)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    
+  <!-- (((((((((((((((((((((fixed chat box))))))))))))))))))))) -->
+  <div class="container-mt">
+    <div class="row">
+      <a href="contact us.html" class="fixed-bottom">
+        <img src="assets\chat box1.jpg" style="height: 60px; float: right; border-radius: 30px;">
+      </a>
+    </div>
+  </div>
+  
+  <!-- (((((((((((((((((Indian dish))))))))))))))))) -->
+
+  <div class="container" style="margin-top: 100px; border-bottom: 1px solid black;">
+    <div class="row">
+        <h3 class="heading3">Indian Food Special</h3>
+        <p class="text2">Indian food is famous in the world for its taste ! Lorem <br> ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptatibus eius velit excepturi incidunt <br> corrupti quam sint architecto est rerum <br> laboriosam?</p>
+        <div class="col-lg-4 col-md-12 col-sm-12" style="border: 10px  solid #fff;">
+            <a href="#"><img class="img" src="assets\i15.jpg" width="100%"></a>
+            <p class="text3">Mungdal Halwa With Puri & pickle</p>
+            <p class="prize">Rs. 299-/ Only <br> (Use Our Coupons <br>And Get Offer) </p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12" style="border: 10px  solid #fff;">
+            <a href="#"><img class="img" src="assets\i16.jpg" width="100%"></a>
+            <p class="text3">Bhindi, Rajma-Chawal With Rayta</p>
+            <p class="prize">Rs. 259-/ Only <br> (Use Our Coupons <br>And Get Offer) </p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12" style="border: 10px  solid #fff;">
+          <a href="#"><img class="img" src="assets\i19.jpg" width="100%"></a>
+          <p class="text3">Matar-Panir ,puri With Rasmalai</p>
+          <p class="prize">Rs. 150/ Only <br> (Use Our Coupons <br>And Get Offer) </p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-lg-4 col-md-12 col-sm-12" style="border: 10px  solid #fff;">
+            <a href="#"><img class="img"src="assets\i17.jpg" width="100%"></a>
+            <p class="text3">Rajma-Chawal, Matar Paneer With Rasmalai</p>
+            <p class="prize">Rs. 199-/ Only <br> (Use Our Coupons <br>And Get Offer) </p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12" style="border: 10px  solid #fff;">
+            <a href="#"><img class="img" src="assets\i18.jpg" width="100%"></a>
+            <p class="text3">Unlimited Pav-Bhaji With Lemon & Butter</p>
+            <p class="prize">Rs. 299-/ Only <br> (Use Our Coupons <br>And Get Offer) </p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12" style="border: 10px  solid #fff;">
+          <a href="#"><img class="img" src="assets\i20.jpg" width="100%"></a>
+          <p class="text3">Paneer Do Pyaza With Paratha & Sweet Barfi</p>
+          <p class="prize">(Use Our Coupons And Get Offer)<br> Rs. 215-/ Only </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- (((((((((((((((((south indian dish))))))))))))))))) -->
+
+  <div class="container" style="margin-top: 70px; border-bottom: 1px solid black;">
+    <div class="row">
+        <h3 class="heading3">South Indian Dish</h3>
+        <p class="text2">In the tandoor, food is exposed to live fire convection cooking.<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Ea vitae atque nemo nihil cumque, earum <br> officiis quae ut perferendis aliquid!</p>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <a href="#"><img class="img" src="assets\i 3.jpeg" width="100%"></a>
+            <p class="text1">Idli Samber</p>
+            <p class="text1">Prize:- Rs. 70-/ Only </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <a href="#"><img class="img" src="assets\i 6.jpeg" width="100%"></a>
+            <p class="text1">Full South Indian Thali</p>
+            <p class="text1">Prize:- Rs. 75-/ Only </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <a href="#"><img class="img" src="assets\i 7.jpeg" width="100%"></a>
+            <p class="text1">Chole Puri</p>
+            <p class="text1">Prize:- Rs. 95-/ Only </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <a href="#"><img class="img" src="assets\i 8.jpeg" width="100%"></a>
+            <p class="text1">Mendu Vada</p>
+            <p class="text1">Prize:- Rs. 88-/ Only </p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12"></div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12">
+            <a href="#"><img class="img" src="assets\i 10.jpeg" width="100%"></a>
+            <p class="text1">Samosa</p>
+            <p class="text1">Prize:- Rs. 30-/ Only </p>
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12">
+            <a href="#"><img class="img" src="assets\i 11.jpeg" width="100%"></a>
+            <p class="text1">Food variety</p>
+            <p class="text1">Prize:- Rs. 70-/ Only </p>
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12"></div>
+
+    </div>
+  </div>
+
+
+  <!-- (((((((((((((((((((tandoor special))))))))))))))))))) -->
+
+  <div class="container" style="margin-top: 80px; margin-bottom: 40px; border-bottom: 1px solid black;">
+    <div class="row">
+        <h3 class="heading3">Tandoor Special</h3>
+        <p class="text2">In the tandoor, food is exposed to live fire convection cooking.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Dignissimos ratione esse placeat! Rerum inventore <br> nobis voluptas tempore a odio reiciendis?</p>
+        <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+            <a href="#"><img class="img" src="assets\t1.jpg"></a>
+            <p class="text1">Grild Chichen</p>
+            <p class="text1">(Prize:- Rs. 10-/ Only)</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+            <a href="#"><img class="img" src="assets\t2.jpg"></a>
+            <p class="text1">Tandoori Chicken</p>
+            <p class="text1">(Prize:- Rs. 130-/ Only)</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+            <a href="#"><img class="img" src="assets\t3.jpg"></a>
+            <p class="text1">Roasted Chicken</p>
+            <p class="text1">(Prize:- Rs. 70-/ Only)</p>
+        </div>
+
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\t4.jpg"></a>
+        <p class="text1">Spicy Chicken Leg Piece</p>
+        <p class="text1">(Prize:- Rs. 99-/ Only)</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\t5.jpg"></a>
+        <p class="text1">Oven Backed Tandoori Chicken</p>
+        <p class="text1">(Prize:- Rs. 200-/ Only)</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\t6.jpg"></a>
+        <p class="text1">Smocky Tandoori Chicken</p>
+        <p class="text1">(Prize:- Rs. 160-/ Only)</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container" style="border-bottom: 1px solid black;;">
+    <div class="row">
+      <h3 class="heading3">Itallian Food</h3>
+      <p class="text2">The Taste of Itallian food with our Experts Lorem <br> ipsum dolor, sit amet consectetur adipisicing <br> elit. Iusto labore officia harum nisi odio <br> sequi soluta atque, nemo ipsam at? </p>
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it1.jpg" width="100%"></a>
+        <p class="text1">Mini Ziti Pasta</p>
+        <p class="text1">Prize:- Rs. 69-/ Only </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it2.jpg" width="100%"></a>
+        <p class="text1">Bun With Salmon</p>
+        <p class="text1">Prize:- Rs. 80-/ Only </p>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it3.jpg" width="100%"></a>
+        <p class="text1">Itallian Spaghetti</p>
+        <p class="text1">Prize:- Rs. 99-/ Only </p>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it4.jpg" width="100%"></a>
+        <p class="text1">Delicious Garlic Knots</p>
+        <p class="text1">Prize:- Rs. 90-/ Only </p>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it5.jpg" width="100%"></a>
+        <p class="text1">Ravioli With Prawns</p>
+        <p class="text1">Prize:- Rs. 109-/ Only </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it6.jpg" width="100%"></a>
+        <p class="text1">Meatballs & permegano</p>
+        <p class="text1">Prize:- Rs. 99-/ Only </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it7.jpg" width="100%"></a>
+        <p class="text1">Pasta</p>
+        <p class="text1">Prize:- Rs. 70-/ Only </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\it8.jpg" width="100%"></a>
+        <p class="text1">Itallian Pizza</p>
+        <p class="text1">Prize:- Rs. 160-/ Only </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="border-bottom: 1px solid black; padding-bottom: 10px; margin-top: 50px;">
+    <div class="row">
+      <h3 class="heading3">Pizza</h3>
+      <p class="text2">Pizza in Diffrent Taste and Diffrent Types of varieties Lorem <br> ipsum dolor sit amet consectetur adipisicing elit.<br> Dolores eius velit harum neque alias. <br>Quaerat sint dolores incidunt<br> explicabo deleniti! </p>
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p1.jpg" width="100%"></a>
+        <p class="text1">Paneer Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p2.jpg" width="100%"></a>
+        <p class="text1">Cheeze Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p3.jpg" width="100%"></a>
+        <p class="text1">Corn Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+    </div>
+    <!-- <br> -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p4.jpg" width="100%"></a>
+        <p class="text1">Itallian Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p5.jpg" width="100%"></a>
+        <p class="text1">Corn-Cheeze Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p6.jpg" width="100%"></a>
+        <p class="text1">capssicum Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+    </div>
+    <!-- <br> -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p7.jpg" width="100%"></a>
+        <p class="text1">Nonveg Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p8.jpg" width="100%"></a>
+        <p class="text1">veg Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\p9.jpg" width="100%"></a>
+        <p class="text1">Garlic Pizza</p>
+        <a href="#" class="btn btn-success">view more</a>
+      </div>
+    </div>
+  </div>
+  <!-- <br> -->
+
+  <div class="container" style="border-bottom: 1px solid black; padding-top: 50px;">
+    <div class="row">
+      <h3 class="heading3">Mocktails</h3>
+      <p class="text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Facere alias voluptate voluptatem quas dolorum <br> laudantium ipsam, sit accusamus ab <br> consequatur?</p>
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\m1.jpg" width="100%"></a>
+        <p class="text1">(100 rs Only)</p>
+        <p class="text1">Flat 50% off on Sunday</p>
+
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\m2.jpg" width="100%"></a>
+        <p class="text1">(100 rs Only)</p>
+        <p class="text1">Flat 50% off on Sunday</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\m3.jpg" width="100%"></a>
+        <p class="text1">(100 rs Only)</p>
+        <p class="text1">Flat 50% off on Sunday</p>
+      </div>
+    </div>
+    <!-- <br> -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\m4.jpg" width="100%"></a>
+        <p class="text1">(100 rs Only)</p>
+        <p class="text1">Flat 50% off on Sunday</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\m5.jpg" width="100%"></a>
+        <p class="text1">(100 rs Only)</p>
+        <p class="text1">Flat 50% off on Sunday</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12"></div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container" style="margin-top: 40px;">
+    <div class="row">
+      <h3 class="heading3">Desserts</h3>
+      <p class="text2">Try Our Special Desserts & Enjoy  <br> ...............The Moment.............</p>
+      <div class="col-lg-3 col-md-4 col-sm-6" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\d8.jpg" width="100%"></a>
+        <p class="text1">Try Some Sweets With Our Speciallity</p>
+        <a href="#" class="btn btn-success"> Order Now</a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\d2.jpg" width="100%"></a>
+        <p class="text1">Try Some Sweet With Our Speciallity</p>
+        <a href="#" class="btn btn-success"> Order Now</a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\d3.jpg" width="100%"></a>
+        <p class="text1">Try Some Sweet With Our Speciallity</p>
+        <a href="#" class="btn btn-success"> Order Now</a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6" style="border: 10px  solid #fff;">
+        <a href="#"><img class="img" src="assets\d11.jpg" width="100%"></a>
+        <p class="text1">Try Some Sweet With Our Speciallity</p>
+        <a href="#" class="btn btn-success"> Order Now</a>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12" style="border: 20px solid white;">
+        <a href="#"><img class="img" src="assets\d7.jpg" width="100%"></a>
+        <p class="text1">Try Some Sweet With Our Speciallity</p>
+        <a href="#" class="btn btn-success"> Order Now</a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12" style="border: 20px solid white;">
+        <a href="#"><img class="img" src="assets\d5.jpg" width="100%"></a>
+        <p class="text1">Try Some Sweet With Our Speciallity</p>
+        <a href="#" class="btn btn-success"> Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!--{{{{{{{{{{{{{{{{{{{{{{{{{ fixed footer }}}}}}}}}}}}}}}}}}}}}}}}}}}}-->
+
+  <div class="footer" style="background-color: black; padding-top: 50px; padding-bottom: 30px;">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <p style="padding-left: 30px; color: white;"><b>MENU</b></p>
+        <ul style="list-style: none; color: white; line-height: 35px;">
+          <li><a href="menu.html" class="footerlist">Indian Food</a></li>
+          <li><a href="menu.html" class="footerlist">South Indian Special</a></li>
+          <li><a href="menu.html" class="footerlist">Tandoor Special</a></li>
+          <li><a href="menu.html" class="footerlist">Itallian Food</a></li>
+          <li><a href="menu.html" class="footerlist">Pizzas</a></li>
+          <li><a href="menu.html" class="footerlist">Mocktails</a></li>
+          <li><a href="menu.html" class="footerlist">Desserts</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <p style="padding-left: 30px; color: white;"><b>ABOUT US</b></p>
+        <ul style="list-style: none; color: white; line-height: 35px;">
+          <li><a href="about us.html" class="footerlist">Terms & Conditions</a></li>
+          <li><a href="about us.html" class="footerlist">Privacy Policy</a></li>
+          <li><a href="about us.html" class="footerlist">Organize Party</a></li>
+          <li><a href="about us.html" class="footerlist">Order Online</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <p style="padding-left: 30px; color: white;"><b>CONTACT US</b></p>
+      <ul style="list-style: none; color: rgb(50, 47, 47); cursor: pointer; line-height: 35px;">
+        <li><a href="contact us.html" class="footerlist">Join us On Social Media</a></li>        
+        <li><a href="contact us.html" class="footerlist">FAQ's & Support</a></li>
+        <li><a href="contact us.html" class="footerlist">Costomer Cares</a></li>
+        <li><a href="contact us.html" class="footerlist"> Franchising</a></li>
+        <li><a href="contact us.html" class="footerlist">Carrers</a></li>        
+      </ul>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <p style="padding-left: 30px; color: white;"><b>SOCIAL MEDIA</b></p>
+        <ul style="list-style: none; color: rgb(50, 47, 47); line-height: 35px;">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </ul>
+      </div>
+    </div>
+
+    <br>
+
+    <!--{{{{{{{{{{{{{{{{{{{{{{{{{{{ copyright }}}}}}}}}}}}}}}}}}}}}}}}}}}}-->
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <p style="text-align: center; color: white;">All Rights Reserved Copyright © The Hangout Restaurant.</p>
+      </div>
+    </div>
+
+</body>
+</html>
